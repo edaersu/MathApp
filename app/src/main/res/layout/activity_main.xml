@@ -32,7 +32,7 @@
                 android:layout_height="50dp"
                 />
         </LinearLayout>
-        
+
         <Button
             android:text="Hesapla"
             android:layout_marginTop="50dp"
