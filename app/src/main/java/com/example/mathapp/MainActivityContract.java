@@ -1,5 +1,9 @@
 package com.example.mathapp;
 
+import com.example.mathapp.model.Question;
+
+import java.util.List;
+
 public interface MainActivityContract {
 
     interface View{
@@ -10,6 +14,8 @@ public interface MainActivityContract {
         public void initOnClick();
 
         void initView(String s);
+
+        void showQuestions(List<Question> questionList);
     }
 
     interface Presenter{

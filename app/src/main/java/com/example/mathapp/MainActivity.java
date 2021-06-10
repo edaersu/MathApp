@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mathapp.model.Question;
+
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -35,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
 
         helper = new Helper();
         this.presenter = new MainActivityPresenter(helper);
-        this.presenter.setView(this);
-        this.presenter.created();
+        presenter.setView(this);
+        presenter.created();
     }
 
     @Override
@@ -60,5 +64,12 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     @Override
     public void initView(String s) {
         sonuc.setText(s);
+    }
+
+    @Override
+    public void showQuestions(List<Question> questionList) {
+        for (Question q:questionList) {
+            System.out.println(q.getS1()+" "+q.getS2()+" "+q.getIslem());
+        }
     }
 }
