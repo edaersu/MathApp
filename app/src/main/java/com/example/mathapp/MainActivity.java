@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     }
 
     @Override
-    public void loadImage() {
+    public void loadImages() {
         Glide.with(getApplicationContext())
                 .load("https://www.pngkey.com/png/full/34-349471_soru-iareti-pregnancy.png")
                 .centerCrop()
