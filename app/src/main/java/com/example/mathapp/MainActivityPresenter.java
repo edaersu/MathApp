@@ -34,6 +34,7 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
     public void created() {
         this.view.bindView();
         this.view.initOnClick();
+        this.view.loadImage();
         getQuestionList();
         Log.d("eda","cerated çalıştı");
     }

@@ -16,6 +16,8 @@ public interface MainActivityContract {
         void initView(String s);
 
         void showQuestions(List<Question> questionList);
+
+        void loadImage();
     }
 
     interface Presenter{

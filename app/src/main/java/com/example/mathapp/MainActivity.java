@@ -4,10 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.example.mathapp.model.Question;
 
 import java.util.List;
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     Button btnIslem;
     @BindView(R.id.sonuc)
     TextView sonuc;
+    @BindView(R.id.image)
+    ImageView image;
 
     private MainActivityPresenter presenter;
     Helper helper;
@@ -71,5 +75,13 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
         for (Question q:questionList) {
             System.out.println(q.getS1()+" "+q.getS2()+" "+q.getIslem());
         }
+    }
+
+    @Override
+    public void loadImage() {
+        Glide.with(getApplicationContext())
+                .load("https://www.pngkey.com/png/full/34-349471_soru-iareti-pregnancy.png")
+                .centerCrop()
+                .into(image);
     }
 }
