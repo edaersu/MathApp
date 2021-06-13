@@ -1,7 +1,7 @@
-package com.example.mathapp.service;
+package com.example.mathapp.pages.MainActivity.service;
 
 import io.reactivex.Observable;
-import com.example.mathapp.model.Question;
+import com.example.mathapp.pages.MainActivity.model.Question;
 import java.util.List;
 import retrofit2.http.GET;
 

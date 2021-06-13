@@ -1,4 +1,4 @@
-package com.example.mathapp.model;
+package com.example.mathapp.pages.MainActivity.model;
 
 public class Question {
      String s1;

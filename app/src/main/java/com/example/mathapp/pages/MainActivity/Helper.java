@@ -1,4 +1,4 @@
-package com.example.mathapp;
+package com.example.mathapp.pages.MainActivity;
 
 public class Helper {
 

@@ -1,6 +1,6 @@
-package com.example.mathapp;
+package com.example.mathapp.pages.MainActivity;
 
-import com.example.mathapp.model.Question;
+import com.example.mathapp.pages.MainActivity.model.Question;
 
 import java.util.List;
 

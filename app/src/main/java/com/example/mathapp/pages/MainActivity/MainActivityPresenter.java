@@ -1,11 +1,11 @@
-package com.example.mathapp;
+package com.example.mathapp.pages.MainActivity;
 
 
 import android.util.Log;
 
 import com.example.mathapp.Const.Api;
-import com.example.mathapp.model.Question;
-import com.example.mathapp.service.IQuestionService;
+import com.example.mathapp.pages.MainActivity.model.Question;
+import com.example.mathapp.pages.MainActivity.service.IQuestionService;
 
 import java.util.List;
 
